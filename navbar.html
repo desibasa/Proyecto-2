@@ -8,45 +8,58 @@
 <style>
 @font-face{
     font-family: "bubble";
-    src: url(assets/fuentes/Knewave/Knewave-Regular.ttf);
+    src: url(assets/fuentes/Trade_Winds/TradeWinds-Regular.ttf);
+}
+@media (min-width:768px){
+    nav{
+        display: flex;
+    }
 }
 nav{
     color: white;
     list-style: none;
+    display: none;
 }
 nav ul{
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-family: "bubble";
     align-items: center;
-    margin-right: 50px;
 }
-nav ul a {
+nav ul li a{
     text-decoration: none;
-    color: #FCC37C;
+    color: #DB7F2D;
     font-size: 40px;
-    -webkit-text-stroke: 2px #3c3330;
 }
 .icono{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
+    margin-left: -100px;
+    margin-top: 10px;
+}
+.icono:hover{
+    box-shadow: 0px 10px rgba(0, 0, 0, 0.519);
     border-radius: 50%;
-    border: 10px solid #594A46;
+}
+
+.lis:hover {
+    transform: scale(1.2);
+    text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.622);
 }
 
 </style>
 <body>
     
-    <nav>
+    <nav id="navbar" class="navbar">
         <ul>
-            <a href="index.html"><img src="assets/Mas-removebg-preview.png" class="icono"></a>
-            <a href="google.com"><li>Alimentación</li></a>
-            <a href=""><li>Accesorios</li></a>
-            <a href=""><li>Formación</li></a>
-            <a href=""><li>Contacto</li></a>
+            <li class="lis"><a href="index.html"><img src="assets/huella-removebg-preview.png" class="icono"></a></li>
+            <li class="lis"><a href="">Alimentación</a></li>
+            <li class="lis"><a href="">Accesorios</a></li>
+            <li class="lis"><a href="">Formación</a></li>
+            <li class="lis"><a href="">Contacto</a></li>
         </ul>
     </nav>
 
