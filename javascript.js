@@ -8,5 +8,10 @@
            error));
 }
 // Cargamos navbar y footer al cargar la página 
- loadComponent("navbar", "navbar.html");
- loadComponent("footer", "footer.html");
+//  loadComponent("navbar", "navbar.html");
+//  loadComponent("footer", "footer.html");
+
+document.addEventListener("DOMContentLoaded", function () {
+    loadComponent("navbar", "navbar.html");
+    loadComponent("footer", "footer.html");
+});
