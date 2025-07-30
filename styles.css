@@ -5,11 +5,13 @@ html, body{
     height: 100vh;
 }
 
-/* ESTILOS DEL NAVBAR */
-
 @font-face{
     font-family: "bubble";
     src: url(assets/fuentes/Trade_Winds/TradeWinds-Regular.ttf);
+}
+@font-face{
+    font-family: "monserrat";
+    src: url(assets/fuentes/Montserrat/static/Montserrat-Light.ttf);
 }
 ul{
     list-style: none;
@@ -68,11 +70,21 @@ ul li a{
     height: 40px;
     margin-top: 10px;
 }
-/* footer{
-    background-color: red;
-    display: block;
-} */
-
+.icono2:hover{
+    transform: scale(1.2);
+    text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.622);
+}
+footer{
+    display: flex;
+}
+.listas_footer{
+    font-size: 15px;
+    font-family: "bubble";
+}
+.listas_footer a {
+    font-size: 15px;
+    font-family: "monserrat"; 
+}
 @media (min-width: 769px) {
   ul {
     display: flex;
