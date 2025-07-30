@@ -11,25 +11,17 @@ html, body{
     font-family: "bubble";
     src: url(assets/fuentes/Trade_Winds/TradeWinds-Regular.ttf);
 }
-nav{
+ul{
     list-style: none;
-    display: none;   
-}
-@media (min-width: 769px) {
-  nav {
-    display: block;
-  }
-}
-nav ul{
-    list-style: none;
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-evenly;
     font-family: "bubble";
     align-items: center;
     color: white;
 }
-nav ul li a{
+
+ul li a{
     text-decoration: none;
     color: #DB7F2D;
     font-size: 40px;
@@ -38,7 +30,7 @@ nav ul li a{
     width: 100px;
     height: 100px;
     object-fit: cover;
-    margin-left: -100px;
+    margin-left: -50px;
     margin-top: 10px;
 }
 .icono:hover{
@@ -51,5 +43,46 @@ nav ul li a{
     text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.622);
 }
 .seleccion{
-    display: fixed;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    margin-top: -135px;
+    margin-left: 30px;
+    background-color: transparent;
+    border: none;
+}
+.imgmovil{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 30px;
+}
+.buscadores{
+    display: flex;
+    justify-content: space-between;
+    width: 12%;
+}
+.icono2{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+/* footer{
+    background-color: red;
+    display: block;
+} */
+
+@media (min-width: 769px) {
+  ul {
+    display: flex;
+  }
+  .seleccion{
+    display: none;
+    margin: 0;
+  }
+  .imgmovil{
+    display: none;
+    margin: 0;
+  }
 }
