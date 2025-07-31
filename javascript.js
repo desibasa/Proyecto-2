@@ -15,3 +15,4 @@ document.addEventListener("DOMContentLoaded", function () {
     loadComponent("navbar", "navbar.html");
     loadComponent("footer", "footer.html");
 });
+
